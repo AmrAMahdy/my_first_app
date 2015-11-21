@@ -1,0 +1,4 @@
+<h1>Greet,     <%= @name %></h1>
+<p>The time now is <%= formatted_time(@times_displayed)%></p>
+<p>Displayed <%= @times_displayed%> times_displayed</p>
+  

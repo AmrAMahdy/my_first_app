@@ -1,0 +1,5 @@
+<h1>Greet,     <%= @name %></h1>
+<p>The time now is <%= formatted_time(@time)%></p>
+<p>Displayed <%= @times_displayed%> times_displayed</p>
+<p><%= link_to :Link, greeter_goodbye_path"%></p>
+  
