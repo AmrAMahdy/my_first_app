@@ -1,15 +1,13 @@
 <h1>Searching for - <%= @search_term %></h1>
 <table border="1">
-  <% if @courses.nil? %>
-    <p>No results!</p>
-  <% else %>
   <tr>
     <th>Image</th>
     <th>Name</th>
     <th>Description</th>
   </tr>
 
-  <% @courses.each do |course|%>
+  <%unless @courses.nil? %>
+  <%@courses.each do |course|%>
   <tr class="<%= cycle("even", "odd") %>">
     <td><%= image_tag course["smallIcon"] %></td>
     <td><%= course["name"] %></td>
