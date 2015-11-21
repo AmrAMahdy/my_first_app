@@ -1,3 +1,4 @@
-<% names = ['Alex', 'Joe', 'Michael'] %>
-<h1>Greet,     <%= names.sample %></h1>
-<p>Find me in app/views/greet/hello.html.erb</p>
+<h1>Greet,     <%= @name %></h1>
+<p>The time now is <%= formatted_time(@time)%></p>
+<p>Displayed <%= @times_displayed%> times_displayed</p>
+  
