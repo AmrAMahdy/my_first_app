@@ -6,4 +6,8 @@ class GreetControllerTest < ActionController::TestCase
     assert_response :success
   end
 
+  test "should get goodbye" do
+    get :goodbye
+    assert_response :success
+  end
 end
